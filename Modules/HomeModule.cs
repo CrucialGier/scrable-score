@@ -1,3 +1,4 @@
+using System;
 using Nancy;
 using Scrabble.Objects;
 using System.Collections.Generic;
@@ -11,7 +12,9 @@ namespace Scrabble
       Get["/"] = _ => View["index.cshtml"];
       Post["/new_word"] = _ => {
         Score newScore = new Score ();
-        newScore.SetLetterInput(Request.Form["new-word"]);
+        string input = Request.Form["new-word"];
+        char singleInput = Convert.ToChar(input);
+        newScore.SetLetterInput(singleInput);
         return View["index.cshtml", newScore.GetScore()];
       };
     }

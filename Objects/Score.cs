@@ -1,3 +1,4 @@
+using System;
 using Nancy;
 using Xunit;
 using System.Collections.Generic;
