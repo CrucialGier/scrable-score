@@ -12,9 +12,7 @@ namespace Scrabble
       Get["/"] = _ => View["index.cshtml"];
       Post["/new_word"] = _ => {
         Score newScore = new Score ();
-        string input = Request.Form["new-word"];
-        char singleInput = Convert.ToChar(input);
-        newScore.SetLetterInput(singleInput);
+        newScore.SetLetterInput(Request.Form["new-word"]);
         return View["index.cshtml", newScore.GetScore()];
       };
     }
