@@ -9,7 +9,7 @@ namespace Scrabble.Objects
     private char _letterInput;
     // private string[] _letterScore1 = ["a","e","i","o","u","l","n","r","s","t"];
     private string _letterScore1 = "aeioulnrst";
-    private int _letterScore = 0;
+    public int _letterScore = 0;
 
     public char GetLetterInput()
     {

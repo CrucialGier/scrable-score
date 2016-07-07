@@ -8,7 +8,7 @@ namespace Scrabble.Objects
     public void GetScore_SingleLetterScore_1()
     {
       Score newScoreTest = new Score ();
-      newScoreTest.SetLetterInput("l");
+      newScoreTest.SetLetterInput('l');
       Assert.Equal(1, newScoreTest.GetScore());
     }
   }
