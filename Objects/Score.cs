@@ -36,7 +36,7 @@ namespace Scrabble.Objects
           {
             if (letter == tile)
             {
-              return _letterScore += _scores[i];
+              _letterScore += _scores[i];
             }
           }
         }
