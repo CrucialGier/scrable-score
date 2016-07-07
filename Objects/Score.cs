@@ -7,9 +7,8 @@ namespace Scrabble.Objects
   public class Score
   {
     private char _letterInput;
-    // private string[] _letterScore1 = ["a","e","i","o","u","l","n","r","s","t"];
     private string _letterScore1 = "aeioulnrst";
-    public int _letterScore = 0;
+    private int _letterScore = 0;
 
     public char GetLetterInput()
     {
@@ -33,13 +32,3 @@ namespace Scrabble.Objects
     }
   }
 }
-
-
-
-// for (int i = 0; i < _letterScore1.Length; i++)
-// {
-//   if (_letterScore1.charAt(i) == _letterInput)
-//   {
-//     return _letterScore += 1;
-//   }
-// }
